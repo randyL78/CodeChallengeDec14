@@ -3,7 +3,7 @@ const expect = require('chai').expect;
 describe('whichCentury', () => {
     const whichCentury = require('../challenge.js').whichCentury;
     it('Should return a number', () => {
-        expect(whichCentury).to.not.be.an('number');
+        expect(whichCentury).to.be.a('number');
     });
     it('should return 1 when a number between 1 and 100 is entered', () => {
         expect(whichCentury(5)).to.equal(1);        
